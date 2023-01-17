@@ -28,7 +28,7 @@
 ### :hammer_and_wrench: Features and functionalities :
 <div >
 <ul>
-We Have implemented Authentication , Seller panel where seller can perform basic Crud,Authentication page,Home page,Categories page , Main product Page,Add to cart , Payment integration Page and Lastly Payment Successfull
+We Have implemented Authentication , Seller panel where seller can perform basic Crud,Authentication page,Home page,Categories page , Main product Page,Add to cart , Payment integration Page and Lastly Payment Successfull Page.
 <li> 
 Authentication, This Website is Enabled With Jwt,Firebase and nodemailer authentication.A normal Signup and Login flow is implemented. User can do forgot password in case he is not able to remember the password.
 </li>
