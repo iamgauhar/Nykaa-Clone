@@ -225,7 +225,9 @@ let Products_Container = document.querySelector(".NykaaCosProducts-Container")
    async function getAllProducts(){
       const res  = await fetch("https://frightened-shrug-tuna.cyclic.app/products")
       const data = await res.json();
-      // console.log(data.products)
+      console.log(data.products)
+      let alldata=[data]
+      localStorage.setItem("allproducts",JSON.stringify(data.products));
       AppendToProCont(data.products)
    }
 
@@ -429,6 +431,7 @@ function fnSORTPOPULARITY() {
 }
 
 async function addToCart(prod){
+  alert("added to cart successfully")
   const productId = prod._id
   // console.log(productId)
   // const payload = {
@@ -466,4 +469,80 @@ async function addToCart(prod){
     console.log(err);
   }
 
+}
+document.getElementById("type").addEventListener("change",type)
+function type(){
+let types=document.getElementById("type").value;
+console.log(types);
+let data=JSON.parse(localStorage.getItem("allproducts"))
+console.log(data)
+let filteredata=data.filter((el)=>{
+  return el.category==types
+})
+console.log(filteredata)
+AppendToProCont(filteredata)
+}
+
+document.getElementById("rating").addEventListener("change",rating)
+function rating(){
+let types=document.getElementById("rating").value;
+console.log(types);
+let data=JSON.parse(localStorage.getItem("allproducts"))
+if(types=="asc"){
+console.log(data)
+let filteredata=data.sort((a,b)=>{
+  return a.rating-b.rating
+})
+console.log(filteredata)
+AppendToProCont(filteredata)
+
+}
+else if(types=="desc"){
+  console.log(data)
+  let filteredata=data.sort((a,b)=>{
+    return b.rating-a.rating
+  })
+  console.log(filteredata)
+  AppendToProCont(filteredata)
+}
+
+}
+
+
+document.getElementById("price").addEventListener("change",price)
+function price(){
+let types=document.getElementById("price").value;
+console.log(types);
+let data=JSON.parse(localStorage.getItem("allproducts"))
+if(types=="asc"){
+console.log(data)
+let filteredata=data.sort((a,b)=>{
+  return a.price-b.price
+})
+console.log(filteredata)
+AppendToProCont(filteredata)
+
+}
+else if(types=="desc"){
+  console.log(data)
+  let filteredata=data.sort((a,b)=>{
+    return b.price-a.price
+  })
+  console.log(filteredata)
+  AppendToProCont(filteredata)
+}
+
+}
+
+document.getElementById("gender").addEventListener("change",gender)
+function gender(){
+let types=document.getElementById("gender").value;
+console.log(types);
+let data=JSON.parse(localStorage.getItem("allproducts"))
+console.log(data)
+let filteredata=data.filter((el)=>{
+  return el.gender==types
+})
+console.log(filteredata)
+AppendToProCont(filteredata)
 }

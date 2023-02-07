@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lykaa</title>
+    <title>Nykaa</title>
     <link rel="shortcut icon" href="https://images-static.nykaa.com/media/favicon/default/nykaa_favicon_a.png"
     type="image/x-icon">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -103,17 +103,21 @@
             <div class="FilterFunctions-Box">
                 <div class="CATEGORY-BOX">
                     <div class="Categery">
-                        <p>Categery</p> <span class="Cat-DownArrow CATDOWN CatArrow" >˅</span> <span class="Cat-UpArrow CATCUT CatArrow">✖</span>
+                        <p>Category</p> <span class="Cat-DownArrow CATDOWN CatArrow" >˅</span> <span class="Cat-UpArrow CATCUT CatArrow">✖</span>
                     </div>
                     <div class="multiple">
                     <div class="CATMAKEUP">
-                        <p>Makeup</p> <span class="Cat-DownArrow CATMakeDown CatArrow" >˅</span> <span class="Cat-UpArrow CATMAKECUT CatArrow">x</span>
-                        <div class="Makeup-resul">
-                            <p>Lips</p> <span>˅</span>
-                            <p>Eyes</p> <span>˅</span>
-                            <p>Nails</p> <span>˅</span>
-                            <p>Face</p> <span>˅</span>
-                        </div>
+                        <p>Types</p> <span class="Cat-DownArrow CATMakeDown CatArrow" >
+<select  style="margin-left: -100px;" name="" id="type">
+<option value="shampoo">shampoo</option>
+<option value="conditionor">conditioner</option>
+<option value="Hair serum">Hair Serum</option>
+<option value="Hair colour">Hair colour</option>
+<option value="Gel & waxes">Gel & waxes</option>
+</select>
+
+                        </span> <span class="Cat-UpArrow CATMAKECUT CatArrow">x</span>
+                        
                     </div>
 
                     </div>
@@ -124,10 +128,12 @@
                         <p>Price</p> <span class="Cat-DownArrow PriDOWN CatArrow" >˅</span> <span class="Cat-UpArrow PriCUT CatArrow">x</span>
                     </div>
                     <div class="PRICEMULTI">
-                        <p>Rs. 0 - Rs. 499</p> <div class="pribox1 priboxcom"></div>
-                        <p>Rs. 500 - Rs. 999</p> <div class="pribox1 priboxcom"></div>
-                        <p>Rs. 1000 - Rs. 1999</p> <div class="pribox1 priboxcom"></div>
-                        <p>Rs. 2000 - Rs. 3999</p> <div class="pribox1 priboxcom"></div>
+                        <select  style="font-size: 17px;" name="" id="price">
+                            <option value=""> Sort By Price</option>
+                            <option value="asc">Low to high</option>
+                            <option value="desc">High to Low</option>
+
+                            </select>
                     </div>
                 </div>
 
@@ -139,8 +145,14 @@
 
                 <div class="AVGRAT-box">
                     <div class="FAVG">
-                        <p>Avg Customer Rating</p> <span class="Cat-DownArrow AVGDOWN CatArrow" >˅</span> <span class="Cat-UpArrow AVGCUT CatArrow">✖</span>
+                        <p>Customer Rating</p> <span class="Cat-DownArrow AVGDOWN CatArrow" >˅</span> <span class="Cat-UpArrow AVGCUT CatArrow">✖</span>
+                   
                     </div>
+                    <select   name="" id="rating">
+                        <option value="">Ratings</option>
+                        <option value="asc">Lowest to highest Rating</option>
+                        <option value="desc">Highest to Lowest Rating</option>
+                        </select>
                 </div>
 
                 <div class="PREFER-box">
@@ -163,7 +175,15 @@
 
                 <div class="GENDER-box">
                     <div class="FGEN FCOMON">
-                        <p>Gender</p> <span class="Cat-DownArrow GENDOWN CatArrow" >˅</span> <span class="Cat-UpArrow GENCUT CatArrow">✖</span>
+                        <!-- <p>Gender</p>  -->
+                        <select   name="" id="gender">
+                            <option value="">Gender</option>
+                            <option value="female">female</option>
+                            <option value="unisex">unisex</option>
+                            <option value="male">male</option>
+
+                            </select>
+                        
                     </div>
                 </div>
 
@@ -230,5 +250,6 @@
 
 <script src="../scripts/product.js" defer></script>
 <script src="../scripts/index.js" type="module" defer></script>
+
 <!-- <script src="../scripts//cart.js" defer></script> -->
 </html>
