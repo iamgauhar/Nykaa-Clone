@@ -15,7 +15,6 @@
   <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
 
- <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=Express Js&logoColor=white" alt="LinkedIn Badge"/>
  <img src="https://img.shields.io/badge/Nodejs-black?style=for-the-badge&logo=Nodejs&logoColor=white" alt="LinkedIn Badge"/>
 <img src="https://img.shields.io/badge/Firebase-yellow?style=for-the-badge&logo=Firebase&logoColor=white" alt="LinkedIn Badge"/>
 <img src="https://img.shields.io/badge/Stripe-black?style=for-the-badge&logo=Stripe&logoColor=white" alt="LinkedIn Badge"/>
@@ -117,7 +116,6 @@ Check your mobile for otp and submit it to verify
 ![Screenshot from 2023-01-17 22-44-03](https://user-images.githubusercontent.com/108891203/212979126-710ca6b4-1fec-46fc-9038-1bb9e74e6b1d.jpg)
 
 <h1>Thanks for reading till last.Have a great day. </h1>
-<h3>This documentation is created by Anurag Upadhyay</h3>
 
 
 
